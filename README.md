@@ -38,16 +38,22 @@ O painel inferior do orquestrador fornece salto tático instantâneo para qualqu
 | <kbd>F10</kbd>| ❌ **EXIT** | Desativação segura do ecossistema, limpando a memória RAM |
 
 ---
-
 ## 🛠️ ARQUITETURA DE INSTALAÇÃO (O RITUAL)
 
 A forja do Acrópole OS possui um motor inteligente em seu `Makefile`. Ao iniciar a compilação, o sistema verifica a presença de todos os outros aplicativos do ecossistema e compila em cascata qualquer ferramenta ausente de forma automatizada.
 
-### 1. Dependências do Sistema de Arquivos
-Antes de iniciar a compilação, garanta que as ferramentas base de build e as bibliotecas gráficas estão prontas:
+Antes de iniciar a compilação, garanta que as ferramentas base de build e as bibliotecas gráficas estão prontas no sistema de arquivos:
+
+### 1. Dependências do Sistema (Arsenal Completo de Divindades)
 ```bash
-sudo pacman -S ncurses feh alsa-utils sdl2 sdl2_mixer networkmanager udisks2 polkit qterminal nsxiv base-devel git make gcc
+sudo pacman -S --needed \
+    ncurses feh alsa-utils sdl2 sdl2_mixer networkmanager udisks2 polkit qterminal nsxiv base-devel git make gcc \
+    tor torbrowser-launcher transmission-gtk chromium links \
+    lxappearance gparted \
+    geany kitty micro vim pcmanfm gimp vlc flameshot \
+    bmon glances mtr httping btop htop xarchiver zathura abiword gnumeric fastfetch
 ```
+
 
 ### 2. Invocação e Compilação Global
 ```bash
