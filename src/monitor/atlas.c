@@ -71,7 +71,8 @@ void ler_cpu(char *buffer) {
     // Evita divisão por zero na primeira execução
     if (d_tot > 0) {
         uint64_t percent = (d_tot - d_id) * 100 / d_tot;
-        snprintf(buffer, 16, "%lu%%", percent); // Alinhado com o tamanho [16] da struct no core.h
+        snprintf(buffer, 16, "%u%%", (unsigned int)percent); 
+ // Alinhado com o tamanho [16] da struct no core.h
     } else {
         strncpy(buffer, "...", 15);
     }
