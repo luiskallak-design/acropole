@@ -6,6 +6,15 @@
 ## 📸 INTERFACE DO SISTEMA
 ![Matriz Central](assets/acropoleshell.png)
 
+### ⌬ Monitoramento de Redes (Módulo Atlas)
+![Monitor Atlas](assets/acropolenet.png)
+
+### ⌬ Perfis Cromáticos (Matrizes de Divindades)
+<p align="center">
+  <img src="assets/acropolered.png" width="32%" alt="Matriz Ares (Red)" />
+  <img src="assets/acropoleblue.png" width="32%" alt="Matriz Zeus (Blue)" />
+  <img src="assets/acropoleyellow.png" width="32%" alt="Matriz Hefesto (Yellow)" />
+</p>
 ---
 
 ## ⚔️ O ARSENAL TECNOLÓGICO
@@ -58,7 +67,7 @@ sudo pacman -S --needed \
 ### 2. Invocação e Compilação Global
 ```bash
 # Clone a central do Orquestrador
-git clone https://github.com
+git clone https://github.com/luiskallak-design/acropole
 cd acropole
 
 # Compila o Acrópole e puxa toda a cambada ausente de forma automática
