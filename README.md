@@ -76,7 +76,10 @@ make
 # Move o binário central e vincula os caminhos globais do sistema
 sudo make install
 ```
-
+*Nota: Se desejar o monitor `tiptop` (Módulo Hades), instale-o via AUR:*
+```bash
+yay -S tiptop
+```
 ---
 
 ## ⚡ OTIMIZAÇÃO TÁTICA PARA NOTEBOOKS / HARDWARE LIMITADO
